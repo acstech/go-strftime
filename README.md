@@ -1,32 +1,27 @@
 ## go-strftime
 
-golang date time format like ruby layout
+Go date time format compatible with Ruby's [Time#strftime](http://ruby-doc.org/core-2.2.2/Time.html#method-i-strftime)
 
 
-## install
-go get github.com/weidewang/go-strftime
+## Install
+go get github.com/acstech/go-strftime
 
 
-## test
+## Example
 
-<pre>
-
+```go
 package main
 
 import (
-      "fmt"
-      "github.com/weidewang/go-strftime"
-      "time"
-      )
+  "fmt"
+  "time"
+
+  "github.com/acstech/go-strftime"
+)
 
 func main() {
-
-t := time.Now()
-     s := strftime.Strftime(&t, "%Y-%m-%d %H:%M:%S")
-     fmt.Println(s)
-
+  t := time.Now()
+  s := strftime.Strftime(&t, "%Y-%m-%d %H:%M:%S")
+  fmt.Println(s)
 }
-
-
-
-</pre>
+```
