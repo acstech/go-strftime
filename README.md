@@ -1,4 +1,4 @@
-## go-strftime [![Build Status](https://travis-ci.org/acstech/go-strftime.svg)](https://travis-ci.org/acstech/go-strftime)
+## go-strftime [![Build Status](https://travis-ci.org/acstech/go-strftime.svg)](https://travis-ci.org/acstech/go-strftime) [![Coverage Status](https://coveralls.io/repos/acstech/go-strftime/badge.svg)](https://coveralls.io/r/acstech/go-strftime)
 
 Go date time format compatible with Ruby's [Time#strftime](http://ruby-doc.org/core-2.2.2/Time.html#method-i-strftime)
 
