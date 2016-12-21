@@ -111,10 +111,10 @@ func Strftime(t *time.Time, format string) string {
 				app(fmt.Sprintf("%2s", strconv.Itoa(hki)), &i, 1)
 				continue
 			case 'P':
-				app(t.Format("am"), &i, 1)
+				app(t.Format("pm"), &i, 1)
 				continue
 			case 'p':
-				app(t.Format("AM"), &i, 1)
+				app(t.Format("PM"), &i, 1)
 				continue
 			case 'M':
 				app(t.Format("04"), &i, 1)
@@ -199,7 +199,7 @@ func Strftime(t *time.Time, format string) string {
 					strconv.Itoa(hki),
 					t.Format("04"),
 					t.Format("05"),
-					t.Format("AM")),
+					t.Format("PM")),
 					&i, 1)
 				continue
 			case 'R':
