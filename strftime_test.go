@@ -57,8 +57,8 @@ func TestFormat(t *testing.T) {
 		"%k": " 9",
 		"%I": "09",
 		"%l": " 9",
-		"%P": "am",
-		"%p": "AM",
+		"%P": "pm",
+		"%p": "PM",
 
 		// Minute
 		"%M": "37",

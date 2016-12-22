@@ -146,7 +146,7 @@ func Strftime(t *time.Time, format string) string {
 				continue
 			case 'w', 'u': // w sunday is 0,0..6 u monday is 1,1..7
 				wd := int(t.Weekday() - time.Sunday)
-				if wd == 0 && b[i] == 'u' {
+				if wd == 0 && b[i+1] == 'u' {
 					app(strconv.Itoa(7), &i, 1)
 				} else {
 					app(strconv.Itoa(wd), &i, 1)
